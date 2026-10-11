@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <header>
+            <div class="container">
+                <a href="#" class="logo" aria-label="Gallery Home">
+                    📸 <span>Gallery</span>
+                </a>
+                <nav class="navbar" aria-label="Main Navigation">
+                    <a href="#" class="active">Home</a>
+                    <a href="#photos">Photos</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About</a>
+                </nav>
+                <button class="menu-btn" aria-label="Open Menu">☰</button>
+            </div>
+        </header>
+
+        <section class="gallery-intro">
+
+            <p class="intro-tag">WELCOME TO MY WORLD</p>
+
+            <h1>My Image Gallery</h1>
+
+            <p>Explore beautiful moments, places and memories</p>
+
+        </section>
+
+        <section class="categories" id="categories">
+
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="nature">NATURE</button>
+            <button class="filter-btn" data-filter="travel">TRAVEL</button>
+            <button class="filter-btn" data-filter="people">PEOPLE</button>
+            <button class="filter-btn" data-filter="city">CITY</button>
+
+        </section>
+
+        <section class="gallery" id="photos">
+
+            <div class="gallery-item" data-category="nature">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\Nature1.jpg" alt="Nature">
+                <div class="image-overlay">
+                    <h3>Mountain View</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\Travel1.jpg" alt="Travel">
+                <div class="image-overlay">
+                    <h3>Travel Memories</h3>
+                    <p>Travel</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\City.jpg" alt="City">
+                <div class="image-overlay">
+                    <h3>City Lights</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\People1.jpg" alt="People">
+                <div class="image-overlay">
+                    <h3>Beautiful Moments</h3>
+                    <p>People</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\Nature2.jpg" alt="Nature">
+                <div class="image-overlay">
+                    <h3>Peaceful Lake</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\Travel2.jpg" alt="Travel">
+                <div class="image-overlay">
+                    <h3>New Adventure</h3>
+                    <p>Travel</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="D:\Programming language\CodeAlpha_Image Gallery\Images\People2.jpg" alt="People">
+                <div class="image-overlay">
+                    <h3>Beautiful Moments</h3>
+                    <p>People</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="lightbox" id="lightbox">
+            <button class="close-btn" id="closeBtn" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-btn prev-btn" id="prevBtn" aria-label="Previous Image">&#10094;</button>
+            <div class="lightbox-content">
+                <img id="lightboxImage" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxCategory"></p>
+                    <span id="imageCounter"></span>
+                </div>
+            </div>
+            <button class="lightbox-btn next-btn" id="nextBtn" aria-label="Next Image">&#10095;</button>
+        </div>
+
+        <footer class="footer" id="about">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        📸 <span>Gallery</span>
+                    </a>
+                    <p>Capturing beautiful moments, one photograph at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick links</h3>
+                    <a href="#">Home</a>
+                    <a href="#photos">Photos</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Connect with me</h3>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="https://github.com/aaditya-62" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/aaditya-raj72" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Gallery. All Rights Reserved.</p>
+                <p>Designed & Developed by <strong>Aaditya Raj</strong> ❤️</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
